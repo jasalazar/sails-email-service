@@ -24,16 +24,16 @@ You previously have to set your "defaults" configuration in your "index" file on
 sails-hook-email>index.js line 61, mine has the following code:
 
 <code>
-defaults: {<br>
-  __configKey__: {<br>
-    service: 'Gmail',<br>
-    auth: {<br>
-      user: 'myemailaddress@gmail.com',<br>
-      pass: 'mypassword'<br>
-    },<br>
-    templateDir: path.resolve(sails.config.appPath, 'views/emailTemplates'),<br>
-    from: 'noreply@hydra.com',<br>
-    testMode: true<br>
-  }<br>
+defaults: {
+	__configKey__: {
+		service: 'Gmail',
+		auth: {
+			user: 'myemailaddress@gmail.com',
+			pass: 'mypassword'
+		},
+		templateDir: path.resolve(sails.config.appPath, 'views/emailTemplates'),
+		from: 'noreply@hydra.com',
+		testMode: true
+	}
 }
 </code>
